@@ -17,7 +17,7 @@ abstract class emp{
 		
 try{
 	Class.forName("com.mysql.cj.jdbc.Driver");
-	Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/Proj","root","Cloud@123$");  
+	Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/Proj","root","*****Password*******");  
 	Scanner sc = new Scanner(System.in);
 	
 	PreparedStatement pstmt=con.prepareStatement("insert into Proj values(?,?,?,?,?)");
